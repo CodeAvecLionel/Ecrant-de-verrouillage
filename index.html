@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Écran de Verrouillage</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="iphone-frame">
+        <div class="notch">
+            <div class="left-icons">
+                <i class="fas fa-signal"></i>
+            </div>
+            <div class="right-icons">
+                <i class="fas fa-wifi"></i>
+                <i class="fas fa-battery-full"></i>
+            </div>
+        </div>
+        <div class="lock-screen">
+            <div class="lock-screen-content">
+                <div class="time" id="time"></div>
+                <div class="date" id="date"></div>
+                <div class="pin-container">
+                    <input type="password" id="pin" maxlength="4" placeholder="Entrer PIN">
+                    <button id="unlock-btn">Déverrouiller</button>
+                    <div id="error-message" class="error-message"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
